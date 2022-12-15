@@ -25,11 +25,17 @@ https://user-images.githubusercontent.com/22856887/207783592-ee9602cd-80f3-4a8b-
 
 
 
-
-
-
 ### 2. Create Panorama with background
 #### Run `PanoramaCreation.ipynb`
 - Input needed : background video only
 - Selects key frames from background video and saves it in new folder
 - Creates panorama using selected frames
+<img src="https://user-images.githubusercontent.com/22856887/207783765-27d6822e-52f1-4044-b5f7-8fc843f9d19d.png" width="500" >
+
+### 3. Motion Trails on Panorama
+#### Run `MotionTrails.ipynb`
+- Input needed : foreground frames, background frames and background panorama
+- Selects background frames that have good number of matching keybpoints with panorama
+- Selects corresponding foreground frame and warps it to paste it on the panorama
+![motion-trails](https://user-images.githubusercontent.com/22856887/207785095-299b74ba-7ef7-485c-919e-5997d7358d27.png)
+
